@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Gilroy-M;
+    src: url(/GILROY/Gilroy-Medium.woff);
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+width: 100%;
+height: 100vh;
+background-color: black;
+color: white;
+font-family: Gilroy-M;
+}
+
+.div-1{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-event{
+    padding: 20px;
+    border-bottom: 2px solid lightsteelblue;
+}
+
+.nav-event-ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-event-li{
+    
+}

@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(/GILROY/Gilroy-Regular.woff);
+}
+@font-face {
+    font-family: Gilroy-L;
+    src: url(/GILROY/Gilroy-Light.woff);
+}
+@font-face {
+    font-family: Gilroy-M;
+    src: url(/GILROY/Gilroy-Medium.woff);
+}
+@font-face {
+    font-family: Gilroy-H;
+    src: url(/GILROY/Gilroy-Heavy.woff);
+}
+@font-face {
+    font-family: Gilroy-B;
+    src: url(/GILROY/Gilroy-Bold.woff);
+}
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+width: 100%;
+height: 100vh;
+background-color: black;
+color: white;
+font-family: Gilroy-M;
+}
+
+.logo::before{
+    width: 50px;
+    height: 50px;
+    background-image: url(/PHOTOS/logo_color.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    position: relative;
+}
+
+.div-1{
+    align-items: center;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(173, 216, 230, 0.5);
+    font-size: 1.2rem;
+}
+
+.div1-ul{
+    font-size: 0.9rem;
+    display: flex;
+    gap: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.li{
+    transition: color 0.3s ease;
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.li:hover{
+    color: rgb(227, 29, 29);
+    background-color: rgba(89, 89, 89, 0.697);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header nav span{
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+header nav span:hover{
+    color: purple;
+}
+
+.ri-menu-line{
+    display: none;
+}
+
+.main-part{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navside{
+    display: none;
+}
+
+.nav-side-ul{
+    display: none;
+}
+
+.p1{
+    width: 800px;
+    position: absolute;
+}
+
+.para{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    font-size: 1.1rem;
+    width: 50%;
+    line-height: 30px;
+    font-family: Gilroy;
+}
+
+
+@media (max-width:700px) {
+
+    .para{
+        position: absolute;
+        top: 50;
+    }
+
+    .div1-ul{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu:hover{
+        color: blueviolet;
+        scale: 1.2;
+    }
+
+    .navside{
+        display: block;
+        position: absolute;
+        left: 60%;
+        top: 5rem;
+        width: 200px;
+        height: 37vh;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        
+    }
+
+    .nav-side-ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 10px;
+        
+    }
+
+    .nav-side-li:nth-child(1){
+        padding: 5px 50px;
+        background-color: rgba(137, 43, 226, 0.5);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .nav-side-li:nth-child(2){
+        padding: 5px 50px;
+        background-color: rgba(137, 43, 226, 0.5);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .nav-side-li:nth-child(3){
+        padding: 5px 60px;
+        background-color: rgba(137, 43, 226, 0.5);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .nav-side-li:nth-child(4){
+        padding: 5px 40px;
+        background-color: rgba(137, 43, 226, 0.5);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+}
